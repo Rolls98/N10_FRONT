@@ -42,6 +42,7 @@
     .top_bar header nav ul li a {
         color: #333 !important;
         font-weight: bold !important;
+        text-transform: uppercase;
     }
     
     .top_bar header, .main, .d_flex {
