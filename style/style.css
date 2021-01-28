@@ -8,8 +8,7 @@
     height: 100px;
 }
 
-.logo img,
-.part_app_img img{
+img{
     object-fit: contain;
     height: 100%;
 }
@@ -18,23 +17,48 @@
     /* background-color: #0928b2; */
     background-image: url(../images/bg2.jpg);
     background-position: top;
+    background-repeat: no-repeat;
     height: 100vh;
 }
+
+
 
 .main {
     padding: 0px 60px !important;
 }
 
 
-.top_bar header,.main {
+.top_bar header,
+.main,
+.d_flex {
     display: flex;
     justify-content: space-between;
     padding: 30px 60px;
 }
 
 
+.d_flex{
+    align-items: center;
+    justify-content: space-between;
+}
+
+.d_flex .text{
+    font-size: 30px;
+}
 
 
+.preview{
+    display: flex;
+    height: 500px;
+}
+
+.ml{
+    margin-left: 10%;
+}
+
+.mr{
+    margin-right: 10%;
+}
 
 
 
@@ -107,6 +131,11 @@ button.info{
     border-image-source: linear-gradient(to right, #6541c1 0%, #d43396 98%, #d43396 100%);
 }
 
+.how {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
 .part_download{
     margin-top:65px;
 }
@@ -174,6 +203,8 @@ button.info{
         color:black
     }
 
+    
+
     .part_btns{
         display: flex;
         flex-direction: column;
@@ -188,6 +219,26 @@ button.info{
 
     .part_download h1 {
         font-size: 2.4rem !important;
+    }
+
+    .d_flex {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .d_flex .text {
+        font-size: 25px;
+        margin-bottom: 25px;
+    }
+
+    .mr{
+       order: 2;
+       margin: 0!important;
+    }
+
+    .ml {
+        order: 1;
+        margin: 0 !important;
     }
 
 }
