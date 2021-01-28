@@ -30,6 +30,7 @@
         flex-direction: column !important;
         justify-content: space-between;
         align-items: center;
+        padding-top: 90px;
     }
 
     .top_bar header nav ul li {
