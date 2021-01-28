@@ -5,6 +5,22 @@
     .code__generator--content {
         padding: 35px 60px;
     }
+
+    .fonctionality__card--row {
+        flex-direction: column;
+    }
+
+    .next__fonction {
+        width: 100%;
+    }
+
+    .main__fonctionality h1 {
+        font-size: 24px;
+    }
+
+    .fonctionality__card--row .fonctionality__card--items img {
+        height: auto;
+    }
 }
 
 

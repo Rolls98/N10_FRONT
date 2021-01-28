@@ -443,3 +443,66 @@ nav {
     width: 30px;
     margin-top: 5px;
 }
+
+/* Fonctinality Part */
+
+.main__fonctionality {
+    padding: 0 60px;
+}
+
+.main__fonctionality h1{
+    text-align: center;
+    margin: 40px 0;
+    font-size: 35px;
+}
+
+.fonctionality__card--row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.next__fonction {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 35px;
+}
+
+.fonctionality__card--items {
+    flex: 1;
+    margin: 0 10px;
+}
+.circle__card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.circle1 {
+    background-color: #f6ab3f;
+}.circle2 {
+    background-color: #8bc140;
+}.circle3 {
+    background-color: #c1b840;
+}.circle4 {
+    background-color: #c14040;
+}
+.main__fonctionality .circle {
+    height: 25px;
+    width: 25px;
+    padding: 5px;
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+}
+
+
+.fonctionality__card--row .fonctionality__card--items img {
+    margin-top: 15px;
+    height: 650px;
+    width: 100%;
+    object-fit: contain;
+}
+
+.circle__card span {
+    margin-left: 10px;
+}

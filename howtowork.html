@@ -5,74 +5,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/responsive.css">
     <link rel="shortcut icon" href="/images/icons/n10.png" type="image/x-icon">
 </head>
 <body>
-    <section class="top_bar howto">
+    <section id="home" class="top_bar">
         <header>
             <div class="logo">
-                <img src="/images/icons/n10.png" alt="">
+                <a href="index.html"><img src="images/icons/n10.png" alt=""></a>
             </div>
             <nav>
                 <ul>
-                    <li ><span class="ac">A</span>cceuil</li>
-                    <li class="acc"><span class="c_58_970">C</span><span class="c_30_52">o</span><span class="c_10_30">m</span><span class="c_872_894">m</span><span class="c_866">e</span>nt ça fonctionne ?</li>
-                    <li>A propos</li>
-                    <li class="telecharger">Telecharger</li>
+                    <li class="closeMenu"></li>
+                    <li class="acc"><a href="index.html">Acceuil</a></li>
+                    <li><a href="howtowork.html">Comment ça fonctionne ?</a></li>
+                    <li><a href="#">A propos</a></li>
+                    <li class="telecharger">
+                        <a href="generator.html">Telecharger</a>
+                    </li>
                 </ul>
             </nav>
+
+            <div id="SmallMenu" class="menu__mobile">
+                <div class="menu__mobile--title">Menu</div>
+                <div class="hemburger">
+                    <div class="item"></div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                </div>
+            </div>
         </header>
-        <div class="main">
-            <div style="width:100%">
-                <h1 class="how">COMMENT L'APPLICATION FONCTIONNE ?</h1>
-                <!-- <p>l'application N10 est très simple a utiliser</p> -->
-                <div class="d_flex">
-                    <div class="text">
-                        <p>Il faut autoriser l'application à acceder aux contacts</p>
+
+        <div class="main__fonctionality">
+            <h1>Comment fonctionne L'application ?</h1>
+
+            <div class="fonctionality__card">
+                <div class="fonctionality__card--row">
+                    <div class="fonctionality__card--items">
+                        <div class="circle__card">
+                            <div class="circle1 circle">1</div>
+                            <span>Entrer le code</span>
+                        </div>
+                        <img src="./images/1.jpeg" alt="">
                     </div>
-                    <div class="preview mr">
-                        <img src="/images/1.jpeg" alt="">
+                    <div class="fonctionality__card--items">
+                        <div class="circle__card">
+                            <div class="circle1 circle">1</div>
+                            <span>Autorisez l'accès</span>
+                        </div>
+                        <img src="./images/1.jpeg" alt="">
+                    </div>
+                    <div class="fonctionality__card--items">
+                        <div class="circle__card">
+                            <div class="circle2 circle">2</div>
+                            <span>Appuyer sur changer maintement</span>
+                        </div>
+                        <img src="./images/2.jpeg" alt="">
                     </div>
                 </div>
-                <div class="d_flex">
-                    <div class="preview ml">
-                        <img src="/images/2.jpeg" alt="">
+                <div class="next__fonction fonctionality__card--row">
+                    <div class="fonctionality__card--items">
+                        <div class="circle__card">
+                            <div class="circle3 circle">3</div>
+                            <span>Patienter</span>
+                        </div>
+                        <img src="./images/3.jpeg" alt="">
                     </div>
-                     <div class="text">
-                        <p>Il faut autoriser l'application à acceder aux contacts</p>
-                    </div>
-                </div>
-
-                <div class="d_flex">
-                   
-                    
-                     <div class="text">
-                        <p>Il faut autoriser l'application à acceder aux contacts</p>
-                    </div>
-
-                    <div class="preview mr">
-                        <img src="/images/3.jpeg" alt="">
+                    <div class="fonctionality__card--items">
+                        <div class="circle__card">
+                            <div class="circle4 circle">4</div>
+                            <span>Changement éffectuer, vérifier vos contacts</span>
+                        </div>
+                        <img src="./images/4.jpeg" alt="">
                     </div>
                 </div>
-
-                 <div class="d_flex">
-                   
-                    
-                     
-                    <div class="preview ml">
-                        <img src="/images/4.jpeg" alt="">
-                    </div>
-                    <div class="text">
-                        <p>Il faut autoriser l'application à acceder aux contacts</p>
-                    </div>
-
-                </div>
-                
-                
             </div>
         </div>
-    
     </section>
     
+    <script src="js/script.js"></script>
 </body>
 </html>
