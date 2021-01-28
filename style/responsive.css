@@ -1,0 +1,77 @@
+@media (max-width: 882px) {
+    #home .part_app {
+        display: none !important;
+    }
+    .code__generator--content {
+        padding: 35px 60px;
+    }
+}
+
+
+@media (max-width: 992px) {
+    #code__generator .code__generator--content h1 {
+        font-size: 20px;
+    }
+
+    .top_bar header nav {
+        display: none;
+        position: absolute;
+        right: -975px;
+        top: 0;
+        background: #fff;
+        height: 100vh;
+        width: 100%;
+        z-index: 99999;
+        transition: all .3s ease-in-out;
+    }
+
+    .top_bar header nav ul {
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 90px;
+    }
+
+    .top_bar header nav ul li {
+        padding: 14px;
+        margin-top: .8rem;
+        font-size: 1.1rem;
+    }
+
+    .top_bar header nav ul li a {
+        color: #333 !important;
+        font-weight: bold !important;
+        text-transform: uppercase;
+    }
+    
+    .top_bar header, .main, .d_flex {
+        padding: 30px 60px 0px 60px;
+    }
+
+    .menu__mobile {
+        display: flex !important;
+        align-items: center;
+        justify-content: space-around;
+        cursor: pointer;
+        position: relative;
+        z-index: 999999;
+    }
+    
+}
+
+@media (min-width: 1200px) {
+	#code__generator .code__generator--content h1 {
+        font-size: 20px;
+    }
+
+    .top_bar header nav ul li {
+        font-size: 1.1rem;
+    }
+}
+
+@media (min-width: 1600px) {
+	#code__generator .code__generator--content p {
+        font-size: 20px;
+    }
+}

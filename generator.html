@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/responsive.css">
     <link rel="shortcut icon" href="/images/icons/n10.png" type="image/x-icon">
 </head>
 
@@ -17,12 +18,24 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href=""><span class="ac">A</span>cceuil</a></li>
-                    <li><a href="">Comment ça fonctionne ?</a></li>
-                    <li><a href="">A propos</a></li>
-                    <li class="telecharger">Telecharger</li>
+                    <li class="closeMenu"></li>
+                    <li class="acc"><a href="#"><span class="ac">A</span>cceuil</a></li>
+                    <li><a href="#">Comment ça fonctionne ?</a></li>
+                    <li><a href="#">A propos</a></li>
+                    <li class="telecharger">
+                        <a href="#">Telecharger</a>
+                    </li>
                 </ul>
             </nav>
+
+            <div id="SmallMenu" class="menu__mobile">
+                <div class="menu__mobile--title">Menu</div>
+                <div class="hemburger">
+                    <div class="item"></div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                </div>
+            </div>
         </header>
         <div class="main">
             <div class="part_app">
@@ -31,7 +44,7 @@
                 </div>
                 <div class="part_btns">
                     <button class="download"><a href="generator.html">Télécharger</a></button>
-                    <button class="info">Plus D'info</button>
+                    <button class="info"><a href="">Génerer le code</a></button>
                 </div>
             </div>
             <div class="code__generator--content">
@@ -47,14 +60,14 @@
                 </div>
 
                 <form action="" method="post">
-                    <div class="form--row reference_number">
-                        <label for="">Numéro de téléphone</label>
-                        <input type="text" name="" id="" placeholder="REF010101010">
+                    <div class="inputbox form--row number">
+                        <label for="tel">Numéro de téléphone</label>
+                        <input type="text" name="" id="tel" placeholder="45757570">
                     </div>
 
-                    <div class="form--row reference_number">
-                        <label for="">Code de référence après depôt</label>
-                        <input type="text" name="" id="" placeholder="REF010101010">
+                    <div class="inputbox form--row reference_number">
+                        <label for="code_ref">Code de référence après depôt</label>
+                        <input type="text" name="" id="code_ref" placeholder="REF010101010">
                     </div>
 
                     <div class="form--row reference_number">
@@ -64,6 +77,8 @@
             </div>
         </div>
     </section>
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>
