@@ -21,6 +21,7 @@ body {
     color: #333;
 }
 
+
 .wrapper {
     width: 1140px;
     margin: 0 auto;
@@ -40,6 +41,10 @@ ul {
 button {
     font-family: 'century_gothic';
     font-weight: bold;
+}
+
+input {
+    outline: none;
 }
 
 .logo {
@@ -63,15 +68,17 @@ img {
 }
 
 .main {
-    padding: 0px 60px !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    padding: 30px 60px;
 }
 
 .top_bar header,
-.main,
 .d_flex {
     display: flex;
     justify-content: space-between;
     padding: 30px 60px;
+    align-items: center;
 }
 
 .d_flex {
@@ -98,10 +105,11 @@ img {
 
 .top_bar header nav ul li {
     display: inline-block;
-    padding: 25px;
+    padding: 20px;
     margin-top: .8rem;
     color: white;
     font-size: 1.3rem;
+    transition: all 0.5s ease;
 }
 
 .top_bar li.telecharger {
@@ -115,13 +123,28 @@ img {
     cursor: pointer;
 }
 
+/* .top_bar ul li:hover {
+    border-bottom: 5px solid#8bc140 ;
+    background-color: #8bc14059;
+} */
+
+li.telecharger a {
+    color: #333 !important;
+}
+
+.top_bar li.telecharger:hover {
+    border: none !important;
+}
+
+li.acc a{
+    color: black!important;
+    font-weight: bold;
+}
+
 .top_bar ul li a {
     color: #fff;
 }
 
-li.acc {
-    color: black!important;
-}
 
 .part_app_img {
     height: 450px;
@@ -135,15 +158,13 @@ li.acc {
 }
 
 .part_btns button {
+    outline: none;
     padding: 15px;
     width: 150px;
     border-radius: 8px;
     border: none;
     margin: 0 10px;
-}
-
-.part_btns button a {
-    color: #FFF;
+    cursor: pointer;
 }
 
 button.download {
@@ -164,6 +185,10 @@ button.download {
     position: relative;
 }
 
+button.download a {
+    color: #fff !important;
+}
+
 button.info {
     background: white;
     border: 2px solid;
@@ -171,39 +196,11 @@ button.info {
     border-image-source: linear-gradient(to right, #f6ab3f 0%, #8bc140 98%, #8bc140 100%);
 }
 
-
-/* Generator Code Part */
-
-#code__generator {}
-
-#code__generator .code__generator--content h1 {
-    font-size: 35px;
+button.info a {
+    color: #333;
 }
 
-#code__generator .code__generator--content .separator {
-    background-color: #333;
-    height: 2px;
-    width: 200px;
-}
 
-#code__generator .code__generator--content p {
-    font-size: 20px;
-    margin-top: 20px;
-}
-
-form {
-    margin-top: 35px;
-}
-
-input {
-    padding: 6px 12px;
-    border: none;
-    border-radius: 10px;
-    font-size: 18px;
-    margin-top: 5px;
-    border-image-slice: 2;
-    border-image-source: linear-gradient(to right, #6541c1 0%, #d43396 98%, #d43396 100%);
-}
 
 .how {
     text-align: center;
@@ -259,11 +256,13 @@ input {
     .c_10_30,
     .c_866,
     li.acc {
-        color: white!important;
+        color: black!important;
+    }
+    ul li:hover {
+        border-bottom: 1px solid #000 !important;
     }
     .top_bar header {
-        width: 100%;
-        padding: 10px 0px!important;
+        padding: 10px 45px !important;
     }
     .main {
         flex-direction: column-reverse;
@@ -284,14 +283,18 @@ input {
     }
     .part_btns {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
     }
     .part_btns button {
         margin-left: 0 !important;
         margin-bottom: 15px;
         width: 250px;
+    }
+    .part_btns button.info a {
+        color: #333 !important;
     }
     .part_download h1 {
         font-size: 2.4rem !important;
@@ -357,12 +360,86 @@ input {
     }
 }
 
-input[type="submit"] {
-    background-color: #8bc140;
+
+/* Generator Code Part */
+
+#code__generator {}
+
+#code__generator .code__generator--content h1 {
+    font-size: 35px;
 }
 
-.form--row {
+#code__generator .code__generator--content .separator {
+    background: linear-gradient(to right, #f6ab3f 0%, #8bc140 98%, #8bc140 100%);
+    height: 2px;
+    width: 200px;
+}
+
+#code__generator .code__generator--content p {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+#code__generator form {
+    margin-top: 35px;
+}
+
+#code__generator form label {
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+}
+
+#code__generator form input {
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 18px;
+    margin-top: 5px;
+    border-image-slice: 2;
+    border-image-source: linear-gradient(to right, #f6ab3f 0%, #8bc140 98%, #8bc140 100%);
+}
+
+.inputbox input {
+    border-image-source: linear-gradient(to right, #f6ab3f 0%, #8bc140 98%, #8bc140 100%) !important;
+}
+
+#code__generator form input[type="submit"] {
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: #fff;
+    background: #f6ab3f;
+    background: linear-gradient(to right, #f6ab3f 0%, #8bc140 98%, #8bc140 100%);
+}
+
+#code__generator form .form--row {
     display: flex;
     flex-direction: column;
     margin-top: 15px;
+}
+
+nav {
+    transition: all .3s ease-in-out;
+}
+.shownav {
+    display: block !important;
+    transition: all .3s ease-in-out;
+    right: 0 !important;
+}
+.menu__mobile {
+    display: none;
+}
+
+.menu__mobile--title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 15px;
+    text-transform: uppercase;
+}
+
+.hemburger .item{
+    background-color: #000;
+    height: 3px;
+    width: 30px;
+    margin-top: 5px;
 }

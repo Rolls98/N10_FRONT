@@ -1,37 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style/style.css">
-    <link rel="shortcut icon" href="/images/icons/n10.png" type="image/x-icon">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style/style.css">
+        <link rel="stylesheet" href="style/responsive.css">
+        <link rel="shortcut icon" href="/images/icons/n10.png" type="image/x-icon">
+    </head>
 
 <body>
-    <section class="top_bar">
+    <section id="home" class="top_bar">
         <header>
             <div class="logo">
                 <img src="images/icons/n10.png" alt="">
             </div>
             <nav>
                 <ul>
-                    <li class="acc"><span class="ac">A</span>cceuil</li>
-                    <li><span class="c_58_970">C</span><span class="c_30_52">o</span><span class="c_10_30">m</span><span class="c_872_894">m</span><span class="c_866">e</span>nt ça fonctionne ?</li>
-                    <li>A propos</li>
-                    <li class="telecharger">Telecharger</li>
+                    <li class="closeMenu"></li>
+                    <li class="acc"><a href="#"><span class="ac">A</span>cceuil</a></li>
+                    <li><a href="#">Comment ça fonctionne ?</a></li>
+                    <li><a href="#">A propos</a></li>
+                    <li class="telecharger">
+                        <a href="#">Telecharger</a>
+                    </li>
                 </ul>
             </nav>
+
+            <div id="SmallMenu" class="menu__mobile">
+                <div class="menu__mobile--title">Menu</div>
+                <div class="hemburger">
+                    <div class="item"></div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                </div>
+            </div>
         </header>
+
         <div class="main">
             <div class="part_app">
                 <div class="part_app_img">
                     <img src="images/mobile1.png" alt="">
                 </div>
                 <div class="part_btns">
-                    <button class="download">Télécharger</button>
-                    <button class="info">Génerer le code</button>
+                    <button class="download">
+                        <a href="#">Télécharger</a>
+                    </button>
+                    <button class="info">
+                        <a href="">Génerer le code</a>
+                    </button>
                 </div>
             </div>
             <div class="part_download">
@@ -40,6 +58,8 @@
             </div>
         </div>
     </section>
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>
