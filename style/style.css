@@ -58,8 +58,8 @@ li.telecharger {
 }
 
 
-.ac{
-    color:black;
+li.acc{
+    color:black!important;
 }
 
 .part_app_img{
@@ -71,6 +71,7 @@ li.telecharger {
 
 .part_btns{
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .part_btns button{
@@ -125,4 +126,112 @@ button.info{
         line-height: 30px;
 }
 
+@media screen and (max-width:858px) {
+    .top_bar header nav ul li {
+        display: block;
+        padding: 15px;
+        text-align: center;
+        font-size: 1.2rem;
+        margin-bottom: 5px!important;
+    }
+
+    li.telecharger {
+        padding: 10px !important;
+        text-align: center;
+        font-size: 1rem !important;
+        width: 150px;
+        margin: auto;
+    }
+    .c_58_970,
+    .c_30_52,
+    .c_10_30,
+    .c_866,
+    li.acc {
+        color:white!important;
+    }
+
+    .top_bar header{
+        width: 100%;
+        padding: 10px 0px!important;
+    }
+
+    .main {
+        flex-direction: column-reverse;
+        margin: 0!important;
+        padding: 0!important;
+    }
+
+    .part_download{
+        text-align: center;
+        font-size: 1rem;
+        padding: 15px;
+    }
+
+    .part_app_img{
+        padding: 0;
+    }
+    .d_res{
+        color:black
+    }
+
+    .part_btns{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .part_btns button {
+        margin-left: 0 !important;
+        margin-bottom: 15px;
+        width: 250px;
+    }
+
+    .part_download h1 {
+        font-size: 2.4rem !important;
+    }
+
+}
+
+@media screen and (max-width:340px) {
+    .main {
+        width: 100%;
+    }
+    .part_download h1 {
+        font-size: 2rem!important;
+        line-height: 40px!important;
+    }
+    .part_download p {
+        font-size: 1rem !important;
+    }
+}
+
+@media screen and (max-width:979px) and (min-width:858px) {
+    .c_58_970{
+        color:black!important;
+    }
+}
+
+@media screen and (max-width:956px) and (min-width:858px) {
+    .c_30_52 {
+        color: black !important;
+    }
+}
+
+@media screen and (max-width:937px) and (min-width:858px) {
+    .c_10_30 {
+        color: black !important;
+    }
+}
+
+@media screen and (max-width:909px) and (min-width:858px) {
+    .c_872_894 {
+        color: black !important;
+    }
+}
+
+@media screen and (max-width:866px) and (min-width:858px) {
+    .c_866 {
+        color: black !important;
+    }
+}
 
